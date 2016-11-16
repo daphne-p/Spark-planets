@@ -2,7 +2,8 @@
 Tp Spark INF729 - Daphné Pertsekos - Adam Khouiy
 
 <h4> Ligne de commande utilisée pour lancer le job : </h4> 
-   <b>./spark-submit --master local --class com.sparkProject.JobML /home/daphne/TP_Spark/tp_spark/target/scala-2.11/tp_spark-assembly-1.0.jar </b>
+   <b>./spark-submit --master local --class com.sparkProject.JobML /home/daphne/TP_Spark/tp_spark/target/scala-2.11/tp_spark-assembly-1.0.jar /home/daphne/TP_Spark/tp_spark/planets.model /home/daphne/TP_Spark/tp_spark/cleanedDataFrame.parquet </b>
+<p> Le programme prend 2 arguments en paramètre : Le chemin du fichier à exporter pour le modèle, et le chemin du fichier parquet pour loader les données.  </p>
 
 <h4> Fonctionnement du programme </h4> 
 La classe JobML est constituée d'une méthode main qui appelle les méthodes : 
